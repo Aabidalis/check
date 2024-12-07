@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Control Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <main>
+        <section class="status-panel">
+            <div class="status-box">
+                <h2>Temperature</h2>
+                <p id="temp">Loading...</p>
+            </div>
+            <div class="status-box">
+                <h2>Weather Condition</h2>
+                <p id="weather">Loading...</p>
+            </div>
+            <div class="status-box">
+                <h2>Infrared Feed</h2>
+                <div id="infrared-feed">
+                    <img src="infrared-placeholder.jpg" alt="Infrared feed">
+                </div>
+            </div>
+        </section>
+
+        <section class="camera-feed">
+            <h2>Drone Camera Feed</h2>
+            <div class="camera-container">
+                <video id="camera" width="100%" controls autoplay>
+                    <source src="drone-camera-feed.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+        
+        <section class="controls">
+            <h2>Drone Controls</h2>
+            <div class="control-buttons">
+                <button class="control-btn" id="takeoff-btn">Takeoff</button>
+                <button class="control-btn" id="land-btn">Land</button>
+                <button class="control-btn" id="rotate-btn">Rotate</button>
+                <button class="control-btn" id="hover-btn">Hover</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DroneTech Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

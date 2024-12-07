@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Status Panel */
+.status-panel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.status-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status-box h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.status-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Camera Feed */
+.camera-feed {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.camera-feed h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.camera-container {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Controls */
+.controls {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.controls h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+    background-color: #0056b3;
+}
+
+.control-btn:active {
+    background-color: #003f7f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1em;
+}
